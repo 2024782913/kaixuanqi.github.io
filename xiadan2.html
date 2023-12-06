@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			
+			.html {
+				width: 100%;
+				height: 100%;
+			}
+			
+			.body {
+				width: 100%;
+				height: 100%;
+			}
+			.zongde {
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+				position: fixed;
+				width: 100%;
+				top: 0;
+			}
+			
+			.zongde .hover {
+				opacity: 0.5;
+			}
+			
+			.bannernav {
+				width: 100%;
+				height: 150px;
+				background-color: rgba(0, 0, 0, 0.5);
+				display: flex;
+				justify-content: space-evenly;
+				align-items: center;
+			
+			
+			}
+			
+			.bannernav a {
+				color: white;
+				text-decoration: none;
+				font-size: 18px;
+			
+			}
+			
+			.bannernav a:hover {
+				color: red;
+				font-size: 20px;
+			}
+			
+			.bannernav img {
+				align-self: auto;
+			}li {
+			list-style: none;
+		}
+
+		.c2 {
+			width: 1200px;
+			margin: 0 auto;
+			padding-top: 40px;
+			height: 470px;
+		}
+
+		.c2 .one {
+			width: 100%;
+			height: 550px;
+		}
+
+		.container {
+			height: 1050px;
+		}
+
+		.c2 .one .left {
+			width: 418px;
+			height: 418px;
+			float: left;
+		}
+
+		.c2 .one .left img {
+			width: 100%;
+			height: 100%;
+		}
+
+		.c2 .one .left .box {
+			margin-top: 20px;
+			padding: 0 20px;
+			width: 418px;
+			height: 120px;
+		}
+
+		.c2 .one .left .box ul {
+			overflow: hidden;
+			margin-bottom: 20px;
+		}
+
+		.c2 .one .left .box ul li {
+			width: 60px;
+			height: 60px;
+			float: left;
+			margin-right: 18px;
+		}
+
+		.c2 .one .left .box ul li img {
+			width: 100%;
+		}
+
+		.c2 .one .left .box ul>li:nth-child(5) {
+			margin-right: 0;
+		}
+
+		.c2 .one .left .box p {
+			margin-top: 30px;
+			height: 20px;
+			line-height: 20px;
+			font-size: 12px;
+			color: #999;
+		}
+
+		.c2 .one .right {
+			float: left;
+			margin-left: 30px;
+			width: 530px;
+			height: 450px;
+		}
+
+		.c2 .one .right h4 {
+			padding-left: 15px;
+			font-size: 16px;
+			color: #000;
+			text-align: center;
+			margin-bottom: 20px;
+		}
+
+		.c2 .one .right .b1 {
+			width: 530px;
+			height: 40px;
+			background-color: #f0efef;
+		}
+
+		.c2 .one .right .b1 span {
+			font-size: 12px;
+			color: #999;
+			padding-left: 15px;
+			line-height: 40px;
+		}
+
+		.c2 .one .right .b1 .p {
+			margin-left: 30px;
+			color: #ff0036;
+			font-size: 24px;
+			font-weight: 600;
+		}
+
+		.c2 .one .right .b2 {
+			margin-top: 10px;
+			width: 530px;
+			height: 36px;
+		}
+
+		.c2 .one .right .b2 .left {
+			border-radius: 5px;
+			width: 260px;
+			height: 100%;
+			background-color: #ff0036;
+			line-height: 36px;
+			text-align: center;
+			color: #fff;
+			float: left;
+			margin-right: 0;
+			margin-right: 10px;
+		}
+
+		.c2 .one .right .b2 .left span {
+			font-size: 16px;
+			font-weight: 600;
+		}
+
+		.c2 .one .right .b2 .right {
+			border-radius: 5px;
+			color: #999;
+			text-align: center;
+			float: left;
+			width: 260px;
+			height: 36px;
+			line-height: 36px;
+			font-size: 16px;
+			margin-left: 0;
+			border: 1px solid #ff0036;
+		}
+
+		.c2 .one .right .b2 .right .i {
+			color: #ff0036;
+			font-weight: 700;
+			font-size: 20px;
+		}
+
+		.c2 .one .right .b3 {
+			width: 530px;
+			height: 50px;
+			line-height: 50px;
+			color: #999;
+			font-size: 12px;
+			padding-left: 15px;
+		}
+
+		.c2 .one .right .b3 .r {
+			font-size: 14px;
+			color: #000;
+			margin-left: 50px;
+		}
+
+		.c2 .one .right .b4 {
+			position: relative;
+			width: 500px;
+			height: 42px;
+			padding-left: 15px;
+			font-size: 14px;
+			color: #999;
+			line-height: 42px;
+			padding-top: 5px;
+			margin-top: 20px;
+		}
+
+		.c2 .one .right .b4 span {
+			position: absolute;
+			display: inline-block;
+			width: 53px;
+			height: 32px;
+			line-height: 30px;
+		}
+
+		.c2 .one .right .b4 .o {
+			position: absolute;
+			left: 60px;
+			display: inline-block;
+			width: 53px;
+			height: 32px;
+			text-align: center;
+			line-height: 32px;
+			border: 2px solid #ff0036;
+			margin-left: 30px;
+		}
+
+		.c2 .one .right .b4 input {
+			text-align: center;
+			position: absolute;
+			left: 90px;
+			border: 1px solid #999;
+			border-radius: 5px;
+			width: 40px;
+			height: 32px;
+		}
+
+		.c2 .one .right .b4 .t {
+			position: absolute;
+			left: 135px;
+			line-height: 35px;
+		}
+
+		.c2 .one .right .b5 .b1 {
+			float: left;
+			margin-top: -5px;
+			margin-left: 77px;
+			width: 180px;
+			height: 40px;
+			background-color: #ffeded;
+			text-align: center;
+			line-height: 40px;
+			color: #ff0036;
+			font-size: 16px;
+			border: 1px solid #ff0036;
+		}
+
+		.c2 .one .right .b5 .t2 {
+			float: left;
+			background-color: #ff0036;
+			color: #fff;
+			margin-left: 0;
+			margin-left: 10px;
+		}
+
+		.c2 .one .right .b6 {
+			margin-top: 10px;
+			width: 500px;
+			height: 30px;
+			line-height: 30px;
+			color: #999;
+			font-size: 14px;
+		}
+
+		.c2 .one .right .b6 ul li {
+			float: left;
+			margin-right: 30px;
+		}
+
+		.c2 .one .right .b6 span {
+			float: right;
+			margin-right: 20px;
+		}
+
+		.c2 .one .rr {
+			margin-left: 30px;
+			float: left;
+			width: 140px;
+			height: 400px;
+		}
+
+		.c2 .one .rr span {
+			display: inline-block;
+			width: 140px;
+			height: 30px;
+			text-align: center;
+			font-size: 12px;
+			color: #999;
+		}
+
+		.c2 .one .rr ul li {
+			width: 140px;
+			height: 190px;
+		}
+
+		.c2 .one .rr ul li .top {
+			width: 140px;
+			height: 140px;
+		}
+
+		.c2 .one .rr ul li .top img {
+			width: 100%;
+			height: 100%;
+		}
+
+		.c2 .one .rr ul li .bottom {
+			width: 140px;
+			height: 30px;
+			line-height: 30px;
+			text-align: center;
+			font-size: 12px;
+			color: #999;
+		}
+		.sekuai1 {
+			width: 100%;
+			height: 160px;
+			background-color: black;
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+		}
+		
+		.sekuai1 a {
+			color: white;
+			font-size: 18px;
+			text-decoration: none;
+		}
+		
+		.sekuai1 a:hover {
+			color: red;
+			font-size: 20px;
+		}
+		
+		.sekuai1 p {
+			color: white;
+			font-size: 18px;
+		}
+		</style>
+	</head>
+	<body>
+		<div class="zongde">
+					<div><img src="img/logo.jpg" height="150px" width="300px" /></div>
+					<div class="bannernav">
+				
+				
+						<div><a href="shouye.html">首页</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								
+							<a href="kefang.html">酒店设施</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<a href="yuding.html">在线预订</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								
+							<a href="rencai.html">人才招聘</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<a href="jingqu.html">周边景点</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<a
+								href="guanyuwomen.html">关于我们</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<a href="huiyuan.html">会员权益</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<a href="lianxi.html">联系我们</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<a href="zhuce.html">用户注册</a>
+						</div>
+					</div>
+				</div>
+				</div>
+				<div><img src="img/1636967478674221.jpg" width="100%" height="600px" /></div>
+				<!-- content开始 -->
+				<div class="content c2">
+					<div class="one">
+						<div class="left">
+							<img src="./img/d2.jpg" alt="">
+						</div>
+						<div class="right">
+							<h4>现代化的家具和设施一应俱全，让您在工作或休闲时都感到便捷舒适。</h4>
+							<div class="b1">
+								<span>价格</span>
+								<span class="p">￥186</span>
+							</div>
+							<div class="b2">
+								<div class="left">
+									<span>￥-10元限量好券</span>
+								</div>
+								<div class="right">
+									<span>查看相似款：</span><span class="i">￥196</span>
+								</div>
+							</div>
+							<div class="b3">
+								<span>运费</span><span class="r">免运费</span>
+							</div>
+							<div class="b4">
+								<span>空间</span>
+								<i class="o">45平</i>
+							</div>
+							<div class="b4">
+								<span>数量</span>
+								<input type="text" placeholder="1"><i class="t">件</i>
+							</div>
+							<div class="b4 b5">
+								<div class="b1">加入购物车</div>
+								<div class="b1 t2">立即预订</div>
+							</div>
+							<div class="b6">
+								<ul>
+									<li>服务承诺</li>
+									<li>正品保障</li>
+									<li>空气清新</li>
+									<li>24小时热水</li>
+									<li>独立卫浴</li>
+				
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<br />
+						 
+					<div class="sekuai1">
+					
+						<div><a href="shouye.html">--首页</a>
+							
+							<a href="kefang.html">--酒店设施</a>
+							<a href="yuding.html">--在线预订</a>					<a href="jingqu.html">--周边景点</a>
+							<br /><br />
+		<a href="rencai.html">--人才招聘</a>
+							<a href="guanyuwomen.html">--关于我们</a>
+							<a href="lianxi.html">--联系我们</a>
+							<a href="huiyuan.html">--会员权益</a>
+							<a href="zhuce.html">--用户注册</a>
+						</div>
+						<div>
+							<p>联系我们：0851-38227789 <br /><br /> 地址：贵州省安顺市普定县安织路（凯旋城商业街口）</p>
+						</div>
+					</div>
+					</div>
+	</body>
+</html>

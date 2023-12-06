@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<title>用户登录</title>
+		<script type="text/javascript">
+			function welcome() {
+				var name = document.getElementsByName("name")[0].value
+				alert('登录成功！' + name)
+			}
+		</script>
+<link rel="stylesheet" href="css/denglu.css" />
+		<style>
+		.body{
+			background-image: url(img/beijing1.jpeg);
+		}
+		</style>
+	</head>
+	<body class="body">
+		
+		<div class="zong">
+			<div class="bannernav"><a
+						href="shouye.html">首页</a>
+				</div>
+				<div class="bannernav"><a href="guanyuwomen.html">关于我们</a></div>
+				<div class="bannernav"><a href="kefang.html">酒店设施</a></div>
+				<div class="bannernav"><a href="yuding.html">在线预订</a></div>
+				<div class="bannernav"><a href="jingqu.html">周边景点</a></div>
+				<div class="bannernav"><a href="lianxi.html">联系我们</a></div>
+				<div class="bannernav"><a href="zhuce.html">用户注册</a></div>
+				<div  class="bannernav"><a href="rencai.html">人才招聘</a></div>
+				<div  class="bannernav"><a href="huiyuan.html">会员权益</a></div>
+			</div>
+		</div>
+		<br />
+		<br />
+		<div class="wenzi">
+			<table>
+				<tr>
+					<td>
+						<p>登录账号开通会员可享受<a
+								href="huiyuan.html">会员权益</a>
+						</p>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+
+		<div class="denglu">
+
+			<table align="center" style="background: auto">
+				<tr>
+					<th colspan="2">用户登录</th>
+				</tr>
+				<form name="登录" action="" method="get" />
+
+				<tr colspan="2" align="center">
+					<td>手机号:<input type="text" name="shouji" placeholder="请输入账号" /></td>
+				</tr>
+
+				<tr colspan="2" align="center">
+					<td>密&nbsp;&nbsp;&nbsp;码:<input type="password" name="password" placeholder="请输入密码" /></td>
+				</tr>
+				<tr colspan="2" align="center">
+					<td><input type="reset" value="重新填写" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<button onclick="welcome()"><a href="shouye.html" style="text-decoration: none;">登录</a></button>
+					</td>
+				</tr>
+				</form>
+
+				<tr>
+					<td colspan="2" align="right"><a
+							href="zhuce.html">没有账号，注册一个</a>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+	</body>
+</html>

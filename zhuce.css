@@ -1,0 +1,178 @@
+* {
+				margin: 0;
+				padding: 0;
+			}
+
+			.html {
+				width: 100%;
+				height: 100%;
+			}
+
+			.body {
+				width: 100%;
+				height: 100%;
+
+			}
+
+			#water {
+				width: 100px;
+				height: 100px;
+				margin-top:0px;
+				margin-left: 800px;
+				border-radius: 60% 40% 44% 56% / 43% 30% 70% 57%;
+				box-shadow: inset 10px 20px 30px rgba(0, 0, 0, 0.5),
+					10px 10px 20px rgba(0, 0, 0, 0.3), 15px 15px 30px rgba(0, 0, 0, 0.5), inset -10px -10px 15px rgba(255, 255, 255, 0.8);
+				animation: action 4s linear infinite alternate;
+			}
+
+			#water::after {
+				content: '';
+				width: 15px;
+				height: 15px;
+				position: absolute;
+				top: 145px;
+				left: 835px;
+				background-color: rgba(255, 255, 255, 0.8);
+				border-radius: 36% 64% 44% 56% / 72% 52% 48% 28%;
+			}
+
+			#water::before {
+				content: '';
+				width: 10px;
+				height: 10px;
+				position: absolute;
+				top: 150px;
+				left: 820px;
+				background-color: rgba(255, 255, 255, 0.8);
+				border-radius: 72% 28% 44% 56% / 38% 73% 27% 62%;
+			}
+
+			@keyframes action {
+				25% {
+					border-radius: 54% 46% 41% 59% / 38% 43% 57% 62%;
+				}
+
+				50% {
+					border-radius: 63% 37% 64% 36% / 38% 65% 35% 62%;
+				}
+
+				75% {
+					border-radius: 33% 67% 73% 27% / 44% 49% 51% 56%;
+				}
+
+				100% {
+					border-radius: 73% 27% 87% 13% / 26% 82% 18% 74%;
+				}
+			}
+			#water1 {
+				width: 100px;
+				height: 100px;
+				margin-top: 210px;
+				margin-left: 500px;
+				border-radius: 60% 40% 44% 56% / 43% 30% 70% 57%;
+				box-shadow: inset 10px 20px 30px rgba(0, 0, 0, 0.5),
+					10px 10px 20px rgba(0, 0, 0, 0.3), 15px 15px 30px rgba(0, 0, 0, 0.5), inset -10px -10px 15px rgba(255, 255, 255, 0.8);
+				animation: action 4s linear infinite alternate;
+			}
+			
+			#water1::after {
+				content: '';
+				width: 16px;
+				height: 15px;
+				position: absolute;
+				top: 450px;
+				left: 535px;
+				background-color: rgba(255, 255, 255, 0.8);
+				border-radius: 36% 64% 33% 56% / 12% 52% 48% 28%;
+			}
+			
+			#water1::before {
+				content: '';
+				width: 10px;
+				height: 10px;
+				position: absolute;
+				top: 455px;
+				left: 520px;
+				background-color: rgba(255, 255, 255, 0.8);
+				border-radius: 72% 28% 34% 56% / 38% 56% 27% 62%;
+			}
+			
+			@keyframes action {
+				25% {
+					border-radius: 54% 46% 41% 59% / 38% 43% 57% 62%;
+				}
+			
+				50% {
+					border-radius: 63% 37% 64% 36% / 38% 65% 35% 62%;
+				}
+			
+				75% {
+					border-radius: 33% 67% 73% 27% / 44% 49% 51% 56%;
+				}
+			
+				100% {
+					border-radius: 73% 27% 87% 13% / 26% 82% 18% 74%;
+				}
+			}
+
+			.zong {
+				display: flex;
+				justify-content: space-around;
+			}
+
+			.bannernav {
+				background-color: snow, rgba(0, 0, 0, 1);
+				width: 14%;
+				height: 6%;
+				border-radius: 5px;
+				box-shadow: 2px 1px 1px rgba(0, 0, 0, 0.3);
+				display: flex;
+				justify-content: center;
+			}
+
+
+			.bannernav a {
+				text-decoration: none;
+				color: black;
+				font-size: 25px;
+
+			}
+
+			.bannernav a:hover {
+				font-size: 22px;
+				text-decoration: underline;
+				color: pink;
+			}
+
+			.denglu {
+				width: 410px;
+				height: 400px;
+				background-color: snow, rgba(0, 0, 0, 0.2);
+				position: absolute;
+				inset: 0;
+				margin: auto;
+				border-radius: 5px;
+				box-shadow: 20px 10px 50px rgba(0, 0, 0, 0.3);
+				line-height: 55px;
+			}
+
+			.denglu table {
+
+				font-size: 22px;
+			}
+
+			.denglu th {
+				font-size: 30px;
+			}
+
+			.denglu input {
+				font-size: 22px;
+			}
+
+			.denglu button {
+				font-size: 22px;
+			}
+
+			.wenzi {
+				font-size: 30px;
+			}

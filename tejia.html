@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+		</script>
+		<script>
+			$(document).ready(function() {
+				$("#flip").click(function() {
+					$("#panel").slideToggle("slow");
+				});
+			});
+		</script>
+		<link rel="stylesheet" href="css/tejia.css" />
+		<style type="text/css">
+			<style>* {
+				margin: 0;
+				padding: 0;
+			}
+
+			.html {
+				width: 100%;
+				height: 100%;
+			}
+
+			.body {
+				width: 100%;
+				height: 100%;
+			}
+
+			.zongde {
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+				position: fixed;
+				width: 100%;
+				top: 0;
+			}
+
+			.zongde .hover {
+				opacity: 0.5;
+			}
+
+			.bannernav {
+				width: 100%;
+				height: 150px;
+				background-color: rgba(0, 0, 0, 0.5);
+				display: flex;
+				justify-content: space-evenly;
+				align-items: center;
+
+
+			}
+
+			.bannernav a {
+				color: white;
+				text-decoration: none;
+				font-size: 18px;
+
+			}
+
+			.bannernav a:hover {
+				color: red;
+				font-size: 20px;
+			}
+
+			.bannernav img {
+				align-self: auto;
+			}
+
+			#panel,
+			#flip {
+				padding: 5px;
+				text-align: center;
+				background-color: #e5eecc;
+				border: solid 1px #c3c3c3;
+				display: flex;
+				justify-content: flex-start;
+			}
+
+			#panel {
+				width: 100%;
+				display: flex;
+				justify-content: space-around;
+			}
+
+			#panel.old {
+				width: 40%;
+				text-align: left;
+
+			}
+
+			#panel.new {
+				width: 60%;
+				display: flex;
+				flex-direction: column;
+
+			}
+
+			#panel a {
+				text-decoration: none;
+				color: black;
+			}
+
+			#panel a:hover {
+				color: red;
+			}
+
+			.hezi2 {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			.hezi1 {
+				background-color: white;
+				box-shadow: 20px 10px 10px rgba(0, 0, 0, 0.3);
+				border-radius: 20px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 250px;
+				width: 40%;
+			}
+
+
+			.hezi1 img {
+				border-radius: 30px;
+
+			}
+
+
+
+			.sekuai1 {
+				width: 100%;
+				height: 160px;
+				background-color: black;
+				display: flex;
+				align-items: center;
+				justify-content: space-around;
+			}
+
+			.sekuai1 a {
+				color: white;
+				font-size: 18px;
+				text-decoration: none;
+			}
+
+			.sekuai1 a:hover {
+				color: red;
+				font-size: 20px;
+			}
+
+			.sekuai1 p {
+				color: white;
+				font-size: 18px;
+			}
+
+
+
+
+		</style>
+	<body>
+		<div class="zongde">
+			<div><img src="img/logo.jpg" height="150px" width="300px" /></div>
+			<div class="bannernav">
+
+
+				<div><a href="shouye.html">首页</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+					<a href="kefang.html">酒店设施</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="yuding.html">在线预订</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+					<a href="rencai.html">人才招聘</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="jingqu.html">周边景点</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="guanyuwomen.html">关于我们</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="huiyuan.html">会员权益</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="lianxi.html">联系我们</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="zhuce.html">用户注册</a>
+				</div>
+			</div>
+		</div>
+
+		<div><img src="img/1636967478674221.jpg" width="100%" height="600px" /></div>
+		<div id="flip">
+			<div>
+				<p style="color: red;font-size: 25px;font-weight: 700;"><a href="huiyuan.html"
+						style="font-size: 25px;font-weight: 700;text-align: left;background-color: azure;">返回</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;点击显示酒店今日特价优惠！
+				</p>
+			</div>
+
+
+		</div>
+		<div id="panel">
+			<div id="panel.old">
+			</div>
+			<div id="panel.new">
+				<a href="sanxiaoshi.html" style="font-size: 35px;font-weight: 700;text-decoration: none;">>>3小时豪华大床房 限时特价65元,点击订购<<</a>
+						<p style="font-size: 30px;font-weight: 700;">设施详情：棋牌室，公用区wifi,行李寄存，洗衣服务...</p>
+						<p style="font-size: 25px;font-weight: 600;">入离时间 入住时间:14:00后；离店时间:12:00前</p>
+						<p style="font-size: 20px;">宠物携带:不可携带宠物。</p>
+						<p style="font-size: 20px;">订房必读：入住限制:酒店仅接待大陆客人</p>
+						<p style="font-size: 20px;">
+							价格提示页面展示的酒店预订价格会根据市场情况(房型剩余、时间等)随时发生变化，请您具体以订单页面成交价格为准。预订提示订单需要等酒店或服务提供方确认后生效，订单确认结果以服务提供方短信为准;请在订单生效后再至酒店前台办理入。
+						</p>
+						<a href="anquan.html" style="font-size: 20px;">安全须知:点击查看详情</p></a>
+			</div>
+			<img src="img/huiyuan7.jpg" width="50%" height="100%">
+		</div>
+		<div class="zong1">
+			<div class="hezi2">
+				<div class="hezi1">
+					<div><img src="img/tejia1.jpg" width="300px" height="250px"></div>
+					<div >
+						<p >
+						<p style="font-weight: 700;">豪华大床房></p>32平方米 大床 有窗<br />无早餐 <br /><s>168元</s><br />
+						<h2 style="color: red;">158元</h2>
+						</p>
+					</div>
+				</div>
+				&nbsp;&nbsp;&nbsp;
+				<div class="hezi1">
+					<div><img src="img/tejia2.jpg" width="300px" height="250px"></div>
+					<div>
+						<p>
+						 <p style="font-weight: 700;">豪华娱乐套房></p>30平方米 多床型 2人入住 有窗<br />有早餐 <br /><s>280元</s><br />
+						<h2 style="color: red;">
+							260元</h2>
+						</p>
+					</div>
+				</div>
+				<br />
+			</div>
+			<br />
+			<div class="hezi2">
+				<div class="hezi1">
+					<div><img src="img/tejia3.jpg" width="300px" height="250px"></div>
+					<div>
+						<p>
+						<p style="font-weight: 700;">标准双床房></p>28平方米 多床型 有窗<br />无早餐 <br /><s>126元</s><br />
+						<h2 style="color: red;">116元</h2>
+						</p>
+					</div>
+				</div>
+				&nbsp;&nbsp;&nbsp;
+				<div class="hezi1">
+					<div><img src="img/tejia4.jpg" width="300px" height="250px"></div>
+					<div>
+						<p>
+						<p style="font-weight: 700;">精品双床房></p>25平方米 双床 2人入住 有窗<br />无早餐 <br /><s>138元</s><br />
+						<h2 style="color: red;">
+							118元</h2>
+						</p>
+					</div>
+				</div>
+			</div>
+			<br />
+			<div class="hezi2">
+				<div class="hezi1">
+					<div><img src="img/tejia5.jpg" width="300px" height="250px"></div>
+					<div>
+						<p>
+						<p style="font-weight: 700;">豪华商务房></p>32平方米 大床 有窗<br />无早餐 <br /><s>145元</s><br />
+						<h2 style="color: red;">135元</h2>
+						</p>
+					</div>
+				</div>
+				&nbsp;&nbsp;&nbsp;
+				<div class="hezi1">
+					<div><img src="img/tejia5.jpg" width="300px" height="250px"></div>
+					<div>
+						<p>
+						<p style="font-weight: 700;">标准大床房></p>32平方米 双床 2人入住 有窗<br />无早餐 <br /><s>149元</s><br />
+						<h2 style="color: red;">
+							139元</h2>
+						</p>
+					</div>
+				</div>
+		</div>
+		<br />
+
+
+		<div class="sekuai1">
+
+			<div><a href="shouye.html">--首页</a>
+
+				<a href="kefang.html">--酒店设施</a>
+				<a href="yuding.html">--在线预订</a> <a href="jingqu.html">--周边景点</a>
+				<br /><br />
+				<a href="rencai.html">--人才招聘</a>
+				<a href="guanyuwomen.html">--关于我们</a>
+				<a href="lianxi.html">--联系我们</a>
+				<a href="huiyuan.html">--会员权益</a>
+				<a href="zhuce.html">--用户注册</a>
+			</div>
+			<div>
+				<p>联系我们：0851-38227789 <br /><br /> 地址：贵州省安顺市普定县安织路（凯旋城商业街口）</p>
+			</div>
+		</div>
+		</div>
+	</body>
+</html>

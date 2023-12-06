@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			.html {
+				width: 100%;
+				height: 100%;
+			}
+			
+			.body {
+				width: 100%;
+				height: 100%;
+			}
+			.zongde {
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+				position: fixed;
+				width: 100%;
+				top: 0;
+			}
+			
+			.zongde .hover {
+				opacity: 0.5;
+			}
+			
+			.bannernav {
+				width: 100%;
+				height: 150px;
+				background-color: rgba(0, 0, 0, 0.5);
+				display: flex;
+				justify-content: space-evenly;
+				align-items: center;
+			
+			
+			}
+			
+			.bannernav a {
+				color: white;
+				text-decoration: none;
+				font-size: 18px;
+			
+			}
+			
+			.bannernav a:hover {
+				color: red;
+				font-size: 20px;
+			}
+			
+			.bannernav img {
+				align-self: auto;
+			}
+			.navigation {
+			          	display: flex;
+			          	position: absolute;
+			
+			          }
+			
+			          .navigation>ul>li {
+			          	display: inline-block;
+			          	width: 150px;
+							height: 60px;
+			          	text-align: center;
+			
+			          }
+			
+			          .navigation li {
+			          	display: inline-block;
+			          	width: 100%;
+			          	border-radius: 20px;
+			          	background-color: firebrick;
+			
+			          }
+			
+			          .navigation a {
+			          	text-decoration: none;
+			          	color: black;
+			          	display: inline-block;
+			font-size: 20px;
+			font-weight: 700;
+			          }
+						 .navigation a:hover{
+							 color: white;
+							 font-size: 22px;
+						 }
+			
+			          .hover {
+			          	position: absolute;
+			          	top: 60px;
+			          	width: 150px;
+			          	left: 0;
+			          	background-color: white rgba(255, 255,255, 0);
+			          	border-radius: 20px;
+			          	display: none;
+			          	font-size: 50px;
+			box-shadow: 2px 1px 1px rgba(0, 0, 0, 0.3);
+			
+			          }
+			
+			          .navigation>ul>li:hover .hover {
+			          	display: block;
+			          }
+			
+			          .zuo {
+			          	position: absolute;
+							top: 650px;
+			          }
+			
+			
+			          .sekuai1 {
+			          	width: 1920 px;
+			          	height: 160px;
+			          	background-color: lightgoldenrodyellow;
+			          	display: flex;
+			          	align-items: center;
+			          	justify-content: space-around;
+			          }
+			
+			          .sekuai1 a {
+			
+			          	font-size: 15px;
+			          }
+			
+			          .sekuai1 p {
+			
+			          	font-size: 15px;
+			          }
+			.slideshow-container {
+			  max-width: 1000px;
+			  position: relative;
+			  margin: auto;
+			}
+			
+			.mySlides {
+			  display: none;
+			}
+			
+			.mySlides img {
+			  width: 100%;
+			  height: auto;
+			}
+			
+			.prev, .next {
+			  cursor: pointer;
+			  position: absolute;
+			  top: 50%;
+			  width: auto;
+			  padding: 16px;
+			  margin-top: -22px;
+			  color: white;
+			  font-weight: bold;
+			  font-size: 18px;
+			  transition: 0.6s ease;
+			  border-radius: 0 3px 3px 0;
+			}
+			
+			.next {
+			  right: 0;
+			  border-radius: 3px 0 0 3px;
+			}
+			
+			.prev:hover, .next:hover {
+			  background-color: rgba(0, 0, 0, 0.8);
+			}
+			
+			.text {
+			  color: #f2f2f2;
+			  font-size: 15px;
+			  padding: 8px 12px;
+			  position: absolute;
+			  bottom: 8px;
+			  width: 100%;
+			  text-align: center;
+			}
+			
+			.numbertext {
+			  color: #f2f2f2;
+			  font-size: 12px;
+			  padding: 8px 12px;
+			  position: absolute;
+			  top: 0;
+			}
+			
+			.dots {
+			  text-align: center;
+			  padding: 8px 0;
+			  margin: 0;
+			}
+			
+			.dot {
+			  cursor: pointer;
+			  height: 15px;
+			  width: 15px;
+			  margin: 0 2px;
+			  background-color: #bbb;
+			  border-radius: 50%;
+			  display: inline-block;
+			  transition: background-color 0.6s ease;
+			}
+			
+			.active, .dot:hover {
+			  background-color: #717171;
+			}
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		.sekuai1 {
+			width: 100%;
+			height: 160px;
+			background-color: black;
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+		}
+		
+		.sekuai1 a {
+			color: white;
+			font-size: 18px;
+			text-decoration: none;
+		}
+		
+		.sekuai1 a:hover {
+			color: red;
+			font-size: 20px;
+		}
+		
+		.sekuai1 p {
+			color: white;
+			font-size: 18px;
+		}
+		</style>
+	<body>
+		<div class="zongde">
+			<div><img src="img/logo.jpg" height="150px" width="300px" /></div>
+			<div class="bannernav">
+		
+		
+				<div><a href="shouye.html">首页</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						
+					<a href="kefang.html">酒店设施</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="yuding.html">在线预订</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						
+					<a href="rencai.html">人才招聘</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="jingqu.html">周边景点</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<a
+						href="guanyuwomen.html">关于我们</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="huiyuan.html">会员权益</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="lianxi.html">联系我们</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="zhuce.html">用户注册</a>
+				</div>
+			</div>
+		</div>
+		</div>
+		<div><img src="img/1636967478674221.jpg" width="100%" height="600px" /></div>
+		<div class="slideshow-container">
+		  <div class="mySlides fade">
+		    <img src="img/huiyuan2.jpg" width="90%" height="800px"/>
+		  </div>
+		
+		  <div class="mySlides fade">
+		    <img src="img/huiyuan3.jpg" width="90%" height="800px"/>
+		  </div>
+		
+		  <div class="mySlides fade">
+		    <img src="img/huiyuan5.jpg" width="90%" height="800px"/>
+		  </div>
+		  <div class="mySlides fade">
+		    <img src="img/huiyuan6.jpg" width="90%" height="800px"/>
+		  </div>
+		  <div class="mySlides fade">
+		    <img src="img/huiyuan4.jpg" width="90%" height="800px"/>
+		  </div>
+		  <div class="mySlides fade">
+		    <img src="img/huiyuan7.jpg"width="90%" height="800px"/>
+		  </div>
+		  <div class="mySlides fade">
+		    <img src="img/huiyuan8.jpg" width="90%" height="800px"/>
+		  </div>
+		
+		  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+		
+		<br>
+		
+		<div style="text-align:center">
+		  <span class="dot" onclick="currentSlide(1)"></span>
+		  <span class="dot" onclick="currentSlide(2)"></span>
+		  <span class="dot" onclick="currentSlide(3)"></span>
+		    <span class="dot" onclick="currentSlide(4)"></span>
+			   <span class="dot" onclick="currentSlide(5)"></span>
+				  <span class="dot" onclick="currentSlide(6)"></span>
+				    <span class="dot" onclick="currentSlide(7)"></span>
+					   <span class="dot" onclick="currentSlide(8)"></span>
+		</div>
+		
+		<script>
+		  var slideIndex = 1;
+		  showSlides(slideIndex);
+		
+		  function plusSlides(n) {
+		    showSlides(slideIndex += n);
+		  }
+		
+		  function currentSlide(n) {
+		    showSlides(slideIndex = n);
+		  }
+		
+		  function showSlides(n) {
+		    var i;
+		    var slides = document.getElementsByClassName("mySlides");
+		    var dots = document.getElementsByClassName("dot");
+		    if (n > slides.length) {slideIndex = 1}
+		    if (n < 1) {slideIndex = slides.length}
+		    for (i = 0; i < slides.length; i++) {
+		        slides[i].style.display = "none";
+		    }
+		    for (i = 0; i < dots.length; i++) {
+		        dots[i].className = dots[i].className.replace(" active", "");
+		    }
+		    slides[slideIndex-1].style.display = "block";
+		    dots[slideIndex-1].className += " active";
+		  }
+		</script>
+		<div class="zuo">
+			<div class="navigation">
+				<ul>
+					<li>
+						<h2>会员权益点击这里<<<</h2>
+								<ul class="hover">
+									<li><a href="jiaoxing.html">叫醒服务</a></li>
+									<li><a href="jicun.html">行李寄放</a></li>
+									<li><a href="yiwu.html">衣物清洗</a></li>
+									<li><a href="zaocan.html">早餐服务</a></li>
+									<li><a href="tejia.html">订房优惠</a></li>
+									<li><a href="dasao.html">打扫服务</a></li>
+									<li><a href="tingche.html">停车服务</a></li>
+								</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+				 
+				 
+			<div class="sekuai1">
+			
+				<div><a href="shouye.html">--首页</a>
+					
+					<a href="kefang.html">--酒店设施</a>
+					<a href="yuding.html">--在线预订</a>					<a href="jingqu.html">--周边景点</a>
+					<br /><br />
+<a href="rencai.html">--人才招聘</a>
+					<a href="guanyuwomen.html">--关于我们</a>
+					<a href="lianxi.html">--联系我们</a>
+					<a href="huiyuan.html">--会员权益</a>
+					<a href="zhuce.html">--用户注册</a>
+				</div>
+				<div>
+					<p>联系我们：0851-38227789 <br /><br /> 地址：贵州省安顺市普定县安织路（凯旋城商业街口）</p>
+				</div>
+			</div>
+			</div>
+	</body>
+</html>

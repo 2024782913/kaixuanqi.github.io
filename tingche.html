@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+			</script>
+			<script>
+				$(document).ready(function() {
+					$("#flip").click(function() {
+						$("#panel").slideToggle("slow");
+					});
+				});
+			</script>
+		<script type="text/javascript">
+				function welcome() {
+					var name = document.getElementsByName("name")[0].value
+					alert('已为您登记成功！' + name)
+				}
+			</script>
+		<style>
+			#panel,
+						#flip {
+							padding: 5px;
+							text-align: center;
+							background-color: #e5eecc;
+							border: solid 1px #c3c3c3;
+							display: flex;
+							justify-content: flex-start;
+						}
+			
+						#panel {
+							width: 100%;
+			display: flex;
+			justify-content: space-around;
+						}
+			
+						#panel.old {
+							width: 40%;
+							text-align: left;
+						}
+			
+						#panel.new {
+							width: 60%;
+							display: flex;
+							justify-content: space-around;
+						}
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			.html {
+				width: 100%;
+				height: 100%;
+			}
+			
+			.body {
+				width: 100%;
+				height: 100%;
+			}
+			.zongde {
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+				position: fixed;
+				width: 100%;
+				top: 0;
+			}
+			
+			.zongde .hover {
+				opacity: 0.5;
+			}
+			
+			.bannernav {
+				width: 100%;
+				height: 150px;
+				background-color: rgba(0, 0, 0, 0.5);
+				display: flex;
+				justify-content: space-evenly;
+				align-items: center;
+			
+			
+			}
+			
+			.bannernav a {
+				color: white;
+				text-decoration: none;
+				font-size: 18px;
+			
+			}
+			
+			.bannernav a:hover {
+				color: red;
+				font-size: 20px;
+			}
+			
+			.bannernav img {
+				align-self: auto;
+			}
+			.denglu {
+				width: 430px;
+				height: 400px;
+				background-color: snow, rgba(0, 0, 0, 0.2);
+				border-radius: 5px;
+				box-shadow: 20px 10px 50px rgba(0, 0, 0, 0.3);
+				line-height: 55px;
+			
+			
+			}
+			
+			.denglu table {
+			
+				font-size: 22px;
+			}
+			
+			.denglu th {
+				font-size: 30px;
+			}
+			
+			.denglu input {
+				font-size: 22px;
+			}
+			
+			.denglu button {
+				font-size: 22px;
+			}
+			
+			.wenzi {
+				font-size: 30px;
+			}
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		.sekuai1 {
+			width: 100%;
+			height: 160px;
+			background-color: black;
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+		}
+		
+		.sekuai1 a {
+			color: white;
+			font-size: 18px;
+			text-decoration: none;
+		}
+		
+		.sekuai1 a:hover {
+			color: red;
+			font-size: 20px;
+		}
+		
+		.sekuai1 p {
+			color: white;
+			font-size: 18px;
+		}
+		</style>
+	<body>
+		<div class="zongde">
+			<div><img src="img/logo.jpg" height="150px" width="300px" /></div>
+			<div class="bannernav">
+		
+		
+				<div><a href="shouye.html">首页</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						
+					<a href="kefang.html">酒店设施</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="yuding.html">在线预订</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						
+					<a href="huiyuan.html">人才招聘</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="jingqu.html">周边景点</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<a
+						href="guanyuwomen.html">关于我们</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="huiyuan.html">会员权益</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="lianxi.html">联系我们</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="zhuce.html">用户注册</a>
+				</div>
+			</div>
+		</div>
+		</div>
+		<div><img src="img/1636967478674221.jpg" width="100%" height="600px" /></div>
+		
+				<div id="flip">
+								<div>
+									<p style="color: red;font-size: 25px;font-weight: 700;"><a href="huiyuan.html"
+											style="font-size: 25px;font-weight: 700;text-align: left;background-color: azure;">返回</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;点击显示停车具体服务！
+									</p>
+								</div>
+				
+				
+							</div>
+							<div id="panel">
+								<div id="panel.old">
+								</div>
+								
+								<div id="panel.new">
+				
+									<div class="denglu">
+				
+										<table align="center" style="background: auto">
+											<tr>
+												<th colspan="2">停车服务</th>
+											</tr>
+											<form name="注册" action="" method="get" />
+				
+											<tr colspan="2" align="left">
+												<td>房&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;号:<input type="text" name="name"
+														placeholder="请输入房号" /></td>
+											</tr>
+				
+											<tr colspan="2" align="left">
+												<td>手&nbsp;&nbsp;机&nbsp;&nbsp;号:<input type="text" name="shouji" placeholder="请输入手机号" /></td>
+											</tr>
+											<tr colspan="2" align="left">
+												<td>车&nbsp;&nbsp;牌&nbsp;&nbsp;号:<input type="text" name="shouji" placeholder="请输入车牌号" /></td>
+											</tr>
+				
+											<tr colspan="2" align="left">
+												<td>是否需要洗车服务:<input type="radio" value="female" name="sex" />是<input type="radio" value="male"
+														name="sex" />否
+												</td>
+											</tr>
+				
+				
+											<tr colspan="2" align="center">
+												<td><input type="reset" value="重新填写" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+													<button onclick="welcome()">确定</button>
+												</td>
+											</tr>
+				
+											</form>
+				
+										</table>
+				
+									</div>
+								</div>
+				<img src="img/tingche1.jpg" width="480" height="400px"align="right" />
+							</div>
+						
+				
+			<div class="sekuai1">
+			
+				<div><a href="shouye.html">--首页</a>
+					
+					<a href="kefang.html">--酒店设施</a>
+					<a href="yuding.html">--在线预订</a>					<a href="jingqu.html">--周边景点</a>
+					<br /><br />
+<a href="rencai.html">--人才招聘</a>
+					<a href="guanyuwomen.html">--关于我们</a>
+					<a href="lianxi.html">--联系我们</a>
+					<a href="huiyuan.html">--会员权益</a>
+					<a href="zhuce.html">--用户注册</a>
+				</div>
+				<div>
+					<p>联系我们：0851-38227789 <br /><br /> 地址：贵州省安顺市普定县安织路（凯旋城商业街口）</p>
+				</div>
+			</div>
+			</div>
+	</body>
+</html>
